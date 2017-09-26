@@ -6,17 +6,19 @@
   </head>
   <body>
     <header class="page-header">
-      <a href="index.html" class="page-header__logo">
-        <img src="#" alt="Mishka" width="86" height="35" class="page-header__logo-image">
+      <a href="index.html" class="page-header__logo logo">
+        <img src="#" alt="Mishka" width="86" height="35" class="logo__image">
       </a>
       <nav class="main-nav">
         <button class="main-nav__toggle">Открыть меню</button>
         <ul class="main-nav__list site-list">
-          <li class="sit-list__item">Каталог товаров</li>
+          <li class="sit-list__item"><a>Каталог товаров</a></li>
           <li class="sit-list__item"><a href="form.html">Вязание на заказ</a></li>
-          <li class="sit-list__item">Поиск по сайту</li>
-          <li class="sit-list__item">Корзина: пока пуста</li>
         </ul>
+        <form class="main-nav__header-search">
+          <input type="search" name="search-site" placeholder="Поиск по сайту">
+        </form>
+        <a href="#" class="main-nav__basket">Корзина: пока пуста</a>
       </nav>
     </header>
 
@@ -24,58 +26,55 @@
       <h1 class="page-main__title">Каталог товаров</h1>
 
       <article class="product">
-        <a href="#" class="product__link">
-          <img src="#" width="260" height="195" alt="Зайчик-попрыгайчик" class="product__image">
+        <a href="#" class="product__image">
+          <img src="#" width="260" height="195" alt="Зайчик-попрыгайчик">
         </a>
-        <a href="#" class="product__link">
-          <h4 class="product__name">Зайчик-попрыгайчик</h4>
-        </a>
-        <span class="product__description">Рост 30 см, вес 200 г</span>
-        <b class="product__price">1 200 руб.</b>
+        <h2 class="product__name">
+          <a href="#" class="product__link">Зайчик-попрыгайчик</a>
+        </h2>
+        <div class="product__desc">Рост 30 см, вес 200 г</div>
+        <div class="product__price">1 200 руб.</div>
       </article>
 
       <article class="product">
-        <a href="#" class="product__link">
-          <img src="#" width="260" height="195" alt="Корзинка для белья" class="product__image">
+        <a href="#" class="product__image">
+          <img src="#" width="260" height="195" alt="Корзинка для белья">
         </a>
-        <a href="#" class="product__link">
-          <h4 class="product__name">Корзинка для белья</h4>
-        </a>
-        <span class="product__description">Диаметр 15 см, высота 10 см</span>
-        <b class="product__price">690 руб.</b>
+        <h2 class="product__name">
+          <a href="#" class="product__link">Корзинка для белья</a>
+        </h2>
+        <div class="product__desc">Диаметр 15 см, высота 10 см</div>
+        <div class="product__price">690 руб.</div>
       </article>
 
       <article class="product">
-        <a href="#" class="product__link">
-          <img src="#" width="260" height="195" alt="Большая корзинка для игрушек" class="product__image">
+        <a href="#" class="product__image">
+          <img src="#" width="260" height="195" alt="Большая корзинка для игрушек">
         </a>
-        <a href="#" class="product__link">
-          <h4 class="product__name">Большая корзинка для игрушек</h4>
-        </a>
-        <span class="product__description">РДиаметр 30 см, высота 30 см</span>
-        <b class="product__price">1 500 руб.</b>
+        <h2 class="product__name">
+          <a href="#" class="product__link">Большая корзинка для игрушек</a>
+        </h2>
+        <div class="product__desc">РДиаметр 30 см, высота 30 см</div>
+        <div class="product__price">1 500 руб.</div>
       </article>
 
       <section class="order">
-        <h2 class="order__title">Добавить в карзину</h2>
+        <h3 class="order__title">Добавить в карзину</h3>
         <span class="order__form-title">Выберите размер:</span>
         <form class="order__form">
-          <label class="order__option">
-            S<input type="checkbox" name="size" checked class="visually-hidden">
-          </label>
-          <label class="order__option">
-            M<input type="checkbox" name="size" class="visually-hidden">
-          </label>
-          <label class="order__option">
-            L<input type="checkbox" name="size" class="visually-hidden">
-          </label>
+          <input class="order__checkbox visually-hidden" type="checkbox" name="size" id="size-s" checked>
+          <label class="order__option" for="size-s">S</label>
+          <input class="order__checkbox visually-hidden" type="checkbox" name="size" id="size-m" checked>
+          <label class="order__option" for="size-s">M</label>
+          <input class="order__checkbox visually-hidden" type="checkbox" name="size" id="size-l" checked>
+          <label class="order__option" for="size-s">L</label>
+          <input type="submit" value="Добавить" class="order__add button">
         </form>
-        <a href="#" class="order__add button">Добавить</a>
       </section>
 
       <section class="production">
         <h4 class="production__title">Процесс производства</h4>
-        <video src="#"></video>
+        <div class="production-video"></div>
         <p class="production__text">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.
         </p>
         <a href="#" class="production__order button">Сделать заказ</a>
@@ -85,9 +84,9 @@
     <footer class="page-footer">
       <div class="page-footer__social social">
         <ul class="social__list">
-          <li class="social__itrm"><a href="#" class="social__link social__link--instagram">instagram</a></li>
-          <li class="social__itrm"><a href="#" class="social__link social__link--facebook">facebook</a></li>
-          <li class="social__itrm"><a href="#" class="social__link social__link--twitter">twitter</a></li>
+          <li class="social__item"><a href="#" class="social__link social__link--instagram">instagram</a></li>
+          <li class="social__item"><a href="#" class="social__link social__link--facebook">facebook</a></li>
+          <li class="social__item"><a href="#" class="social__link social__link--twitter">twitter</a></li>
         </ul>
       </div>
       <div class="page-footer__copyright copyright">
