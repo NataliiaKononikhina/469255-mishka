@@ -1,5 +1,5 @@
 .title-wrapper__title {
-  font-family: "OpenSansBold", Arial, Helvetica, sans-serif;
+  font-family: "OpenSansBold", "Arial", "Helvetica", sans-serif;
   font-size: 27px;
   line-height: 30px;
   color: black;
@@ -18,7 +18,7 @@
   list-style: none;
   padding: 0;
   margin: 0;
-  font-family: "OpenSansBold", Arial, Helvetica, sans-serif;
+  font-family: "OpenSansBold", "Arial", "Helvetica", sans-serif;
   font-size: 19px;
   line-height: 24px;
 }
@@ -27,9 +27,11 @@
   position: relative;
   width: 515px;
   padding: 27px 28px;
+
   &:first-child {
     background-color: #63d1bb;
   }
+
   &:last-child {
     background-color: #56c3b2;
   }
@@ -37,6 +39,7 @@
 
 .title-wrapper__link {
   color: white;
+
   &--interior::after {
     content: "";
     background-image: url("../img/icon-interior.svg");
@@ -48,6 +51,7 @@
     top: 23px;
     left: 263px - 20px;
   }
+
   &--toy::after {
     content: "";
     background-image: url("../img/icon-toy.svg");
