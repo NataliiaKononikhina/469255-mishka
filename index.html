@@ -3,11 +3,12 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Мишка</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="page-header">
       <a class="page-header__logo logo">
-        <img src="#" alt="Mishka"  width="86" height="35" class="logo__image">
+        <img src="img/logo-mobile.svg" alt="Mishka"  width="86" height="35" class="logo__image">
       </a>
       <nav class="main-nav">
         <button class="main-nav__toggle" type="button">Открыть меню</button>
@@ -26,8 +27,8 @@
       <div class="page-main__title-wrapper title-wrapper">
         <h1 class="title-wrapper__title">Милые штуки ручной работы для дома</h1>
         <ul class="title-wrapper__list">
-          <li class="title-wrapper__item"><a href="#">Предметы интерьера</a></li>
-          <li class="title-wrapper__item"><a href="#">Детские игрушки</a></li>
+          <li class="title-wrapper__item"><a href="#" class="title-wrapper__link title-wrapper__link--interior">Предметы<br>интерьера</a></li>
+          <li class="title-wrapper__item"><a href="#" class="title-wrapper__link title-wrapper__link--toy">Детские<br>игрушки</a></li>
         </ul>
       </div>
 
@@ -37,19 +38,19 @@
         <p class="best-product__text">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
         <table class="best-product__list">
           <tr class="best-product__characteristic">
-            <td class="best-product__param">Цвет:</td>
-            <td class="best-product__value">«Тиффани»/серый</td>
+            <td class="best-product__param cell">Цвет:</td>
+            <td class="best-product__value cell">«Тиффани»/серый</td>
           </tr>
           <tr class="best-product__characteristic">
-            <td class="best-product__param">Диметр:</td>
-            <td class="best-product__value">25 см</td>
+            <td class="best-product__param cell">Диметр:</td>
+            <td class="best-product__value cell">25 см</td>
           </tr>
           <tr class="best-product__characteristic">
-            <td class="best-product__param">Высота:</td>
-            <td class="best-product__value">15 см</td>
+            <td class="best-product__param cell">Высота:</td>
+            <td class="best-product__value cell">15 см</td>
           </tr>
         </table>
-        <img src="#" width="260" height="315" alt="Вязаные корзинки">
+        <img src="img/triple-set-mobile@1x.jpg" width="260" height="315" alt="Вязаные корзинки">
         <span class="best-product__price">Цена: 990 руб.</span>
         <button class="best-product__order button" type="button">Заказать</button>
       </article>
@@ -60,9 +61,9 @@
         <form class="order__form">
           <input class="order__checkbox visually-hidden" type="checkbox" name="size" id="size-s" checked>
           <label class="order__option" for="size-s">S</label>
-          <input class="order__checkbox visually-hidden" type="checkbox" name="size" id="size-m" checked>
+          <input class="order__checkbox visually-hidden" type="checkbox" name="size" id="size-m">
           <label class="order__option" for="size-s">M</label>
-          <input class="order__checkbox visually-hidden" type="checkbox" name="size" id="size-l" checked>
+          <input class="order__checkbox visually-hidden" type="checkbox" name="size" id="size-l">
           <label class="order__option" for="size-s">L</label>
           <input type="submit" value="Добавить" class="order__add button">
         </form>
@@ -71,12 +72,12 @@
       <section class="page-main__about-us about-us">
         <h2 class="about-us__title">Коротко о нас:</h2>
         <ul class="about-us__list">
-          <li class="about-us__item">Экологически чистые материалы</li>
-          <li class="about-us__item">Скандинавский стиль по российской цене</li>
-          <li class="about-us__item">Увеличивает лайки на фотографиях</li>
-          <li class="about-us__item">Связано вручную с любовью и умилением</li>
-          <li class="about-us__item">Поддержка отечественного производителя</li>
-          <li class="about-us__item">Поставляется в подарочной упаковке</li>
+          <li class="about-us__item about-us__item--flower">Экологически чистые материалы</li>
+          <li class="about-us__item about-us__item--money">Скандинавский стиль по российской цене</li>
+          <li class="about-us__item about-us__item--heart">Увеличивает лайки на фотографиях</li>
+          <li class="about-us__item about-us__item--ball">Связано вручную с любовью и умилением</li>
+          <li class="about-us__item about-us__item--rocket">Поддержка отечественного производителя</li>
+          <li class="about-us__item about-us__item--gift">Поставляется в подарочной упаковке</li>
         </ul>
       </section>
 
@@ -88,8 +89,14 @@
         </p>
         <span class="reviews__name">Анастасия Красильникова</span>
         <span class="reviews__nickname">@misssssiskras</span>
-        <button class="reviews__prev" type="button">Предыдущий отзыв</button>
-        <button class="reviews__next" type="button">Следующий отзыв</button>
+        <div class="reviews__toggle-wrapper">
+          <button class="reviews__toggle reviews__toggle--prev" type="button">
+            <span class="visually-hidden">Предыдущий отзыв</span>
+          </button>
+          <button class="reviews__toggle reviews__toggle--next" type="button">
+            <span class="visually-hidden">Следующий отзыв</span>
+          </button>
+        </div>
         <a href="#" class="reviews__write button">Написать</a>
       </section>
 
@@ -97,7 +104,7 @@
         <h3 class="contacts__title">Контакты</h3>
           <div class="contacts__item">
             <span class="contacts__value">e-mail:</span>
-            <span class="contacts__field"><a href="#">info@mimimishkashop.ru</a></span>
+            <span class="contacts__field"><a href="#" class="contacts__link">info@mimimishkashop.ru</a></span>
           </div>
           <div class="contacts__item">
             <span class="contacts__value">адрес:</span>
@@ -111,14 +118,28 @@
     <footer class="page-footer">
       <div class="page-footer__social social">
         <ul class="social__list">
-          <li class="social__item"><a href="#" class="social__link social__link--instagram">instagram</a></li>
-          <li class="social__item"><a href="#" class="social__link social__link--facebook">facebook</a></li>
-          <li class="social__item"><a href="#" class="social__link social__link--twitter">twitter</a></li>
+          <li class="social__item">
+            <a href="#" class="social__link social__link--instagram">
+              <span class="visually-hidden">instagram</span>
+            </a>
+          </li>
+          <li class="social__item">
+            <a href="#" class="social__link social__link--facebook">
+              <span class="visually-hidden">facebook</span>
+            </a>
+          </li>
+          <li class="social__item">
+            <a href="#" class="social__link social__link--twitter">
+              <span class="visually-hidden">twitter</span>
+            </a>
+          </li>
         </ul>
       </div>
       <div class="page-footer__copyright copyright">
         <b class="copyright__text">Разработано</b>
-        <a class="button copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+          <span class="visually-hidden">HTML Academy</span>
+        </a>
       </div>
     </footer>
   </body>

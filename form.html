@@ -3,11 +3,12 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Мишка</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="page-header">
       <a href="index.html" class="page-header__logo logo">
-        <img src="#" alt="Mishka" width="86" height="35" class="logo__image">
+        <img src="img/logo-mobile.svg" alt="Mishka" width="86" height="35" class="logo__image">
       </a>
       <nav class="main-nav">
         <button class="main-nav__toggle">Открыть меню</button>
@@ -71,28 +72,28 @@
           <legend class="form__legend">ФИО</legend>
           <div class="form__group">
             <label class="form__label" for="name">Имя:</label>
-            <input type="text" name="Имя" id="name" placeholder="Введите ваше имя*" required>
+            <input type="text" name="Имя" id="name" class="form__input" placeholder="Введите ваше имя*" required>
           </div>
           <div class="form__group">
             <label class="form__label" for="second-name">Фамилия:</label>
-            <input type="text" name="Фамилия" id="second-name" placeholder="Укажите фамилию*" required>
+            <input type="text" name="Фамилия" id="second-name" class="form__input" placeholder="Укажите фамилию*" required>
           </div>
           <div class="form__group">
             <label class="form__label" for="patronymic">Отчество:</label>
-            <input type="text" name="Отчество" id="patronymic" placeholder="Отчество, если желаете">
+            <input type="text" name="Отчество" id="patronymic" class="form__input" placeholder="Отчество, если желаете">
           </div>
         </fieldset>
         <fieldset class="form__list">
           <legend class="form__legend">Тел</legend>
-          <input type="tel" name="Телефон" placeholder="+7 ХХХ ХХ ХХ*" required>
+          <input type="tel" name="Телефон" class="form__input" placeholder="+7 ХХХ ХХ ХХ*" required>
         </fieldset>
         <fieldset class="form__list">
           <legend class="form__legend">e-mail</legend>
-          <input type="email" name="e-mail" placeholder="Ваш Email*" required>
+          <input type="email" name="e-mail" class="form__input" placeholder="Ваш Email*" required>
         </fieldset>
         <fieldset class="form__list">
           <legend class="form__legend">Доп</legend>
-          <textarea name="Пожелания к заказу" cols="24" rows="6" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+          <textarea name="Пожелания к заказу" cols="24" rows="6" class="form__input" placeholder="Опишите все ваши пожелания к заказу"></textarea>
         </fieldset>
         <small class="form__inscription">
           <sup>*</sup>Поля обязательны для заполнения
@@ -104,14 +105,28 @@
     <footer class="page-footer">
       <div class="page-footer__social social">
         <ul class="social__list">
-          <li class="social__item"><a href="#" class="social__link social__link--instagram">instagram</a></li>
-          <li class="social__item"><a href="#" class="social__link social__link--facebook">facebook</a></li>
-          <li class="social__item"><a href="#" class="social__link social__link--twitter">twitter</a></li>
+          <li class="social__item">
+            <a href="#" class="social__link social__link--instagram">
+              <span class="visually-hidden">instagram</span>
+            </a>
+          </li>
+          <li class="social__item">
+            <a href="#" class="social__link social__link--facebook">
+              <span class="visually-hidden">facebook</span>
+            </a>
+          </li>
+          <li class="social__item">
+            <a href="#" class="social__link social__link--twitter">
+              <span class="visually-hidden">twitter</span>
+            </a>
+          </li>
         </ul>
       </div>
       <div class="page-footer__copyright copyright">
         <b class="copyright__text">Разработано</b>
-        <a class="button copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+          <span class="visually-hidden">HTML Academy</span>
+        </a>
       </div>
     </footer>
   </body>

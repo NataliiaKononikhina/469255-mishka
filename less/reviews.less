@@ -1,0 +1,59 @@
+.reviews {
+  display: flex;
+  flex-direction: column;
+}
+
+.reviews__title {
+  color: black;
+  font-family: 'OpenSansBold', Arial, Helvetica, sans-serif;
+  font-size: 25px;
+  line-height: 30px;
+}
+
+.reviews__name {
+  color: black;
+  font-family: 'OpenSansBold', Arial, Helvetica, sans-serif;
+  font-size: 17px;
+  line-height: 17px;
+  margin-bottom: 9px;
+}
+
+.reviews__toggle-wrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 260px;
+  padding-top: 34px;
+  margin-bottom: 38px;
+}
+
+.reviews__toggle {
+  border: 1px solid #ececec;
+  background-color: white;
+  position: relative;
+  width: 130px;
+  height: 50px;
+  margin: 0;
+  padding: 0;
+  &--prev::before {
+    content: '';
+    background-image: url('../img/icon-left-arrow.svg');
+    background-repeat: no-repeat;
+    background-position: 0 center;
+    width: 52px;
+    height: 26px;
+    position: absolute;
+    top: 11px;
+    left: 37px;
+  }
+  &--next::before {
+    content: '';
+    background-image: url('../img/icon-right-arrow.svg');
+    background-repeat: no-repeat;
+    background-position: 0 center;
+    width: 52px;
+    height: 26px;
+    position: absolute;
+    top: 11px;
+    left: 37px;
+  }
+}
