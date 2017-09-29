@@ -1,6 +1,8 @@
 .reviews {
   display: flex;
   flex-direction: column;
+  margin: 0 auto;
+  position: relative;
 }
 
 .reviews__title {
@@ -57,5 +59,37 @@
     position: absolute;
     top: 11px;
     left: 37px;
+  }
+}
+
+@media (min-width: 320px) {
+  .reviews {
+    width: 260px;
+  }
+}
+
+@media (min-width: 768px) {
+  .reviews {
+    width: 668px;
+  }
+
+  .reviews__toggle-wrapper {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin: 0;
+    padding: 0;
+  }
+
+  .reviews__write {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+}
+
+@media (min-width: 1150px) {
+  .reviews {
+    width: 1050px;
   }
 }

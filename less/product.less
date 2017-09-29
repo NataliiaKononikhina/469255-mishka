@@ -1,33 +1,65 @@
 .product {
   border: 1px solid #ededed;
   width: 260px;
-  margin-bottom: 30px;
   color: black;
 }
 
-@margin-left: 28px;
+@margin: 28px;
 @width: 204px;
+
+.product__name {
+  margin-bottom: 4px;
+}
 
 .product__link {
   font-family: "OpenSansBold", "Arial", "Helvetica", sans-serif;
   font-size: 17px;
   line-height: 24px;
-  margin-left: @margin-left;
+  margin-left: @margin;
   width: @width;
 }
 
 .product__desc {
   font-size: 13px;
   line-height: 30px;
-  margin-left: @margin-left;
+  margin-left: @margin;
   width: @width;
-  border-bottom: 1px solid #ececec;
 }
 
 .product__price {
   font-family: "OpenSansBold", "Arial", "Helvetica", sans-serif;
   font-size: 15px;
   line-height: 24px;
-  margin-left: @margin-left;
+  margin-left: @margin;
+  margin-bottom: @margin;
+  padding-top: 21px;
   width: @width;
+  border-top: 1px solid #ececec;
+}
+
+@media (min-width: 320px) {
+  .product {
+    margin: 0 auto;
+    margin-bottom: 29px;
+  }
+  .product__price {
+    margin-top: 19px;
+  }
+}
+
+@media (min-width: 768px) {
+  .product {
+    display: flex;
+    width: 668px;
+    height: 334px;
+    margin-bottom: 54px;
+  }
+}
+
+@media (min-width: 1150px) {
+  .product {
+    display: block;
+    width: 315px;
+    height: 659px;
+  }
 }

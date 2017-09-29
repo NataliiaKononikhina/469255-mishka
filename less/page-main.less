@@ -1,9 +1,43 @@
+.page-main {
+  margin: 0 auto;
+}
+
+.page-main__title-background {
+  width: 100%;
+  background-color: #f1f1f1;
+}
+
 .page-main__title {
   font-family: "OpenSansBold", "Arial", "Helvetica", sans-serif;
   font-size: 27px;
   line-height: 30px;
   color: black;
-  background-color: #f1f1f1;
   padding: 76px 0;
   text-align: center;
+  margin: 0 auto;
+}
+
+@media (min-width: 320px) {
+  .page-main__title-background {
+    margin-bottom: 26px;
+  }
+
+  .page-main__title {
+    width: 320px;
+  }
+}
+
+@media (min-width: 768px) {
+  .page-main__title {
+    width: 768px;
+  }
+}
+
+@media (min-width: 1150px) {
+  .page-main__products {
+    display: flex;
+    justify-content: space-between;
+    width: 1050px;
+    margin: 0 auto;
+  }
 }

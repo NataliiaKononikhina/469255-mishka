@@ -24,14 +24,16 @@
     </header>
 
     <main class="page-main">
-      <h1 class="page-main__title">Вязание на заказ</h1>
+      <div class="page-main__title-background">
+        <h1 class="page-main__title">Вязание на заказ</h1>
+      </div>
       <p>Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа
         и мы свяжемся с вами, чтобы уточнить детали.
       </p>
 
       <form class="form" action="https://echo.htmlacademy.ru">
         <fieldset class="form__list">
-          <legend class="form__legend">Тип</legend>
+          <legend class="form__legend" align="top">Тип</legend>
           <div class="form__group">
             <input class="form__radio visually-hidden" type="radio" id="accessories-1" value="Аксессуар для интерьера" name="type" checked>
             <label class="form__label" for="accessories-1">Аксессуар для интерьера</label>
@@ -103,30 +105,32 @@
     </main>
 
     <footer class="page-footer">
-      <div class="page-footer__social social">
-        <ul class="social__list">
-          <li class="social__item">
-            <a href="#" class="social__link social__link--instagram">
-              <span class="visually-hidden">instagram</span>
-            </a>
-          </li>
-          <li class="social__item">
-            <a href="#" class="social__link social__link--facebook">
-              <span class="visually-hidden">facebook</span>
-            </a>
-          </li>
-          <li class="social__item">
-            <a href="#" class="social__link social__link--twitter">
-              <span class="visually-hidden">twitter</span>
-            </a>
-          </li>
-        </ul>
-      </div>
-      <div class="page-footer__copyright copyright">
-        <b class="copyright__text">Разработано</b>
-        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-          <span class="visually-hidden">HTML Academy</span>
-        </a>
+      <div class="page-footer__wrapper">
+        <div class="page-footer__social social">
+          <ul class="social__list">
+            <li class="social__item">
+              <a href="#" class="social__link social__link--instagram">
+                <span class="visually-hidden">instagram</span>
+              </a>
+            </li>
+            <li class="social__item">
+              <a href="#" class="social__link social__link--facebook">
+                <span class="visually-hidden">facebook</span>
+              </a>
+            </li>
+            <li class="social__item">
+              <a href="#" class="social__link social__link--twitter">
+                <span class="visually-hidden">twitter</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="page-footer__copyright copyright">
+          <b class="copyright__text">Разработано</b>
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+            <span class="visually-hidden">HTML Academy</span>
+          </a>
+        </div>
       </div>
     </footer>
   </body>

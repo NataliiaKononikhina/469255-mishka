@@ -2,8 +2,10 @@
   font-family: "OpenSansBold", "Arial", "Helvetica", sans-serif;
   font-size: 17px;
   line-height: 24px;
-  border: 1px solid #ececec;
+  border-bottom: 1px solid #ececec;
   padding: 22px 0;
+  margin: 0 auto;
+  display: flex;
 }
 
 .site-list {
@@ -17,4 +19,64 @@
 .main-nav__basket {
   padding-left: @padding-left;
   margin: 0;
+}
+
+.main-nav__toggle {
+  position: relative;
+  border: none;
+  background-color: transparent;
+  width: 21px;
+  height: 14px;
+  &::before {
+    content: "";
+    background-image: url("../img/icon-menu-open.svg");
+    background-repeat: no-repeat;
+    background-position: 0 center;
+    width: 21px;
+    height: 14px;
+    position: absolute;
+    top: 10px;
+    right: 0;
+  }
+}
+
+@media (min-width: 320px) {
+  .page-header {
+    justify-content: space-between;
+    width: 260px;
+  }
+
+  .main-nav {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) {
+  .page-header {
+    width: 668px;
+    font-size: 15px;
+  }
+
+  .main-nav {
+    display: flex;
+  }
+
+  .main-nav__toggle {
+    display: none;
+  }
+
+  .site-list {
+    display: flex;
+  }
+}
+
+@media (min-width: 1150px) {
+  .page-header {
+    width: 1050px;
+    font-size: 17px;
+  }
+
+  .site-list {
+    display: flex;
+  }
 }

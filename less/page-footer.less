@@ -1,10 +1,10 @@
 .page-footer {
   background-color: #f1f1f1;
+  width: 100%;
 }
 
-.social {
-  width: 260px;
-  border-bottom: 1px solid #e5e5e5;
+.page-footer__wrapper {
+  margin: 0 auto;
 }
 
 .social__list {
@@ -12,10 +12,6 @@
   display: flex;
   justify-content: space-between;
   width: 140px;
-  padding: 0 60px;
-  padding-top: 24px;
-  padding-bottom: 28px;
-  margin: 0;
 }
 
 .social__item {
@@ -64,7 +60,6 @@
 
 .copyright {
   position: relative;
-  padding: 23px 39px;
 }
 
 .copyright__text {
@@ -84,4 +79,46 @@
   position: absolute;
   top: 23px;
   left: 127px + 30 + 39;
+}
+
+
+@media (min-width: 320px) {
+  .page-footer__wrapper {
+    width: 320px;
+  }
+
+  .social {
+    width: 260px;
+    border-bottom: 1px solid #e5e5e5;
+  }
+
+  .social__list {
+  padding: 0 60px;
+  padding-top: 24px;
+  padding-bottom: 28px;
+  margin: 0;
+  }
+
+  .copyright {
+    padding: 23px 39px;
+  }
+}
+
+@media (min-width: 768px) {
+  .page-footer__wrapper {
+    width: 668px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .social {
+    width: 260px;
+    border-bottom: none;
+  }
+}
+
+@media (min-width: 1150px) {
+  .page-footer__wrapper {
+    width: 1050px;
+  }
 }

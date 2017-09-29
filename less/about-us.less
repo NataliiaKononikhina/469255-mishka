@@ -2,6 +2,7 @@
   color: black;
   font-family: "OpenSansBold", "Arial", "Helvetica", sans-serif;
   padding-left: 30px;
+  margin: 0 auto;
 }
 
 .about-us__title {
@@ -93,5 +94,46 @@
     position: absolute;
     left: 3px;
     top: 0;
+  }
+}
+
+@media (min-width: 320px) {
+  .about-us {
+    width: 260px;
+  }
+}
+
+@media (min-width: 768px) {
+  .about-us {
+    width: 668px;
+  }
+
+  .about-us__title {
+    font-size: 43px;
+  }
+
+  .about-us__list {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 20px;
+  }
+
+  .about-us__item {
+    flex-basis: 334px;
+  }
+}
+
+@media (min-width: 1150px) {
+  .about-us {
+    width: 700px;
+    padding: 0 175px;
+  }
+
+  .about-us__title {
+    font-size: 53px;
+  }
+
+  .about-us__item {
+    flex-basis: 350px;
   }
 }
