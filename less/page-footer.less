@@ -8,7 +8,7 @@
 }
 
 .social__list {
-  list-style: none;
+  .no-list;
   display: flex;
   justify-content: space-between;
   width: 140px;
@@ -22,63 +22,45 @@
 
 .social__link {
   &--instagram::before {
-    content: "";
     background-image: url("../img/icon-insta.svg");
-    background-repeat: no-repeat;
-    background-position: 0 center;
     width: 22px;
     height: 30px;
-    position: absolute;
-    top: 0;
     left: 0;
   }
 
   &--facebook::before {
-    content: "";
     background-image: url("../img/icon-fb.svg");
-    background-repeat: no-repeat;
-    background-position: 0 center;
     width: 22px;
     height: 30px;
-    position: absolute;
-    top: 0;
     left: 0;
   }
 
   &--twitter::before {
-    content: "";
     background-image: url("../img/icon-twitter.svg");
-    background-repeat: no-repeat;
-    background-position: 0 center;
     width: 22px;
     height: 30px;
-    position: absolute;
-    top: 0;
     left: 0;
   }
 }
 
 .copyright {
   position: relative;
+  width: 147px;
 }
 
 .copyright__text {
-  font-family: "OpenSansBold", "Arial", "Helvetica", sans-serif;
+  font-weight: bold;
   font-size: 19px;
   line-height: 19px;
-  color: black;
+  color: #000;
 }
 
 .copyright__link::before {
-  content: "";
   background-image: url("../img/logo-htmlacademy.svg");
-  background-repeat: no-repeat;
-  background-position: 0 center;
   width: 27px;
   height: 34px;
-  position: absolute;
   top: 23px;
-  left: 127px + 30 + 39;
+  right: 0;
 }
 
 
@@ -96,7 +78,6 @@
     padding: 0 60px;
     padding-top: 24px;
     padding-bottom: 28px;
-    margin: 0;
   }
 
   .copyright {

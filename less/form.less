@@ -2,8 +2,10 @@
   margin: 0 auto;
 }
 
+@font: "OpenSans", "Arial", "Helvetica", sans-serif;
+
 .form__input {
-  font-family: "OpenSans", "Arial", "Helvetica", sans-serif;
+  font-family: @font;
   font-size: 17px;
   line-height: 17px;
   border: none;
@@ -16,7 +18,8 @@
 }
 
 .form__legend {
-  font-family: "OpenSansBold", "Arial", "Helvetica", sans-serif;
+  font-family: @font;
+  font-weight: bold;
   font-size: 17px;
   line-height: 17px;
   color: #63d1bb;
@@ -25,10 +28,11 @@
 }
 
 .form__label {
-  font-family: "OpenSansBold", "Arial", "Helvetica", sans-serif;
+  font-family: @font;
+  font-weight: bold;
   font-size: 17px;
   line-height: 17px;
-  color: black;
+  color: #000;
 }
 
 .form__inscription {

@@ -9,10 +9,10 @@
 }
 
 .contacts__title {
-  font-family: "OpenSansBold", "Arial", "Helvetica", sans-serif;
+  font-weight: bold;
   font-size: 18px;
   line-height: 30px;
-  color: black;
+  color: #000;
   margin-bottom: 29px;
   position: relative;
 }
@@ -48,13 +48,9 @@
 
 @media (min-width: 768px) {
   .contacts__title::after {
-    content: "";
     background-image: url("../img/icon-flag.svg");
-    background-repeat: no-repeat;
-    background-position: 0 center;
     width: 47px;
     height: 81px;
-    position: absolute;
     top: -20px;
     right: 0;
   }
@@ -98,14 +94,8 @@
   }
 
   .contacts__title::after {
-    content: "";
-    background-image: url("../img/icon-flag.svg");
-    background-repeat: no-repeat;
-    background-position: 0 center;
-    width: 47px;
-    height: 81px;
-    position: absolute;
     top: -20px;
+    right: auto;
     left: -100px;
   }
 

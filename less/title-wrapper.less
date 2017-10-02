@@ -3,10 +3,10 @@
 }
 
 .title-wrapper__title {
-  font-family: "OpenSansBold", "Arial", "Helvetica", sans-serif;
+  font-weight: bold;
   font-size: 27px;
   line-height: 30px;
-  color: black;
+  color: #000;
   background-color: #f1f1f1;
   background-image: url("../img/hero-mobile@1x.jpg");
   background-repeat: no-repeat;
@@ -19,10 +19,8 @@
 }
 
 .title-wrapper__list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  font-family: "OpenSansBold", "Arial", "Helvetica", sans-serif;
+  .no-list;
+  font-weight: bold;
   font-size: 19px;
   line-height: 24px;
 }
@@ -40,28 +38,20 @@
 }
 
 .title-wrapper__link {
-  color: white;
+  color: #fff;
 
   &--interior::after {
-    content: "";
     background-image: url("../img/icon-interior.svg");
-    background-repeat: no-repeat;
-    background-position: 0 center;
     width: 41px;
     height: 62px;
-    position: absolute;
     top: 23px;
     right: 30px;
   }
 
   &--toy::after {
-    content: "";
     background-image: url("../img/icon-toy.svg");
-    background-repeat: no-repeat;
-    background-position: 0 center;
     width: 61px;
     height: 62px;
-    position: absolute;
     top: 23px;
     right: 30px;
   }
