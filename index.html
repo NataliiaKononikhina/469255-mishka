@@ -7,19 +7,28 @@
   </head>
   <body>
     <header class="page-header">
-      <a href="index.html" class="page-header__logo logo">
-        <img src="img/logo-mobile.svg" alt="Mishka" width="86" height="35" class="logo__image">
-      </a>
-      <button class="main-nav__toggle"><span class="visually-hidden">Открыть меню</span></button>
       <nav class="main-nav">
+        <a href="index.html" class="page-header__logo logo">
+          <span class="logo__image"></span>
+        </a>
+        <button class="main-nav__toggle"><span class="visually-hidden">Открыть меню</span></button>
         <ul class="main-nav__list site-list">
-          <li class="sit-list__item"><a>Каталог товаров</a></li>
-          <li class="sit-list__item"><a href="form.html">Вязание на заказ</a></li>
+          <li class="sit-list__item main-nav__item-mob"><a>Каталог товаров</a></li>
+          <li class="sit-list__item main-nav__item-mob"><a href="form.html">Вязание на заказ</a></li>
         </ul>
-        <form class="main-nav__header-search">
-          <input type="search" name="search-site" placeholder="Поиск по сайту">
+        <form class="main-nav__header-search header-search main-nav__item-mob">
+          <img src="img/icon-search.svg" class="header-search__img">
+          <input type="search" name="search-site" class="header-search__input" placeholder="Поиск по сайту">
         </form>
-        <a href="#" class="main-nav__basket">Корзина: пока пуста</a>
+        <div class="main-nav__basket basket main-nav__item-mob">
+          <img src="img/icon-cart.svg" class="basket__img">
+          <a href="#" class="basket__link">Корзина: пока пуста</a>
+        </div>
+        <ul class="main-nav__list site-list-sale">
+          <li class="sit-list-sale__item"><a>Новые поступления</a></li>
+          <li class="sit-list-sale__item"><a>Распродажа</a></li>
+        </ul>
+        <span class="main-nav__info">Бесплатная доставка по России</span>
       </nav>
     </header>
 

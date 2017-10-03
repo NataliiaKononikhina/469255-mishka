@@ -10,10 +10,11 @@
   background-color: #f1f1f1;
   background-image: url("../img/hero-mobile@1x.jpg");
   background-repeat: no-repeat;
+  background-position: center -19px;
   width: 515px;
-  height: 280px;
+  height: 214px;
   padding: 0 30px;
-  padding-top: 76px;
+  padding-top: 69px;
   margin: 0 auto;
   text-align: center;
 }
@@ -41,34 +42,36 @@
   color: #ffffff;
 
   &--interior::after {
+    .pseudo;
     background-image: url("../img/icon-interior.svg");
     width: 41px;
     height: 62px;
-    top: 23px;
-    right: 30px;
+    top: 22px;
+    right: 35px;
   }
 
   &--toy::after {
+    .pseudo;
     background-image: url("../img/icon-toy.svg");
     width: 61px;
     height: 62px;
-    top: 23px;
-    right: 30px;
+    top: 20px;
+    right: 27px;
   }
 }
 
 @media all and (min-width: 320px) {
   .title-wrapper {
-    width: 260px;
+    width: 320px;
   }
 
   .title-wrapper__title {
-    width: 250px;
+    width: 260px;
+    margin: 0 auto;
   }
 
   .title-wrapper__item {
-    width: 100%;
-    padding: 27px 28px;
+    padding: 25px 28px 30px;
   }
 }
 
@@ -102,6 +105,7 @@
     width: 610px;
     font-size: 53px;
     line-height: 53px;
+    background-size: cover;
   }
 
   .title-wrapper__list {
