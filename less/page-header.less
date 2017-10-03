@@ -35,7 +35,7 @@
   }
 }
 
-@media (min-width: 320px) {
+@media all and (min-width: 320px) {
   .page-header {
     justify-content: space-between;
     width: 260px;
@@ -46,10 +46,11 @@
   }
 }
 
-@media (min-width: 768px) {
+@media all and (min-width: 768px) {
   .page-header {
     width: 668px;
     font-size: 15px;
+    flex-wrap: wrap;
   }
 
   .main-nav {
@@ -62,10 +63,11 @@
 
   .site-list {
     display: flex;
+    width: 340px;
   }
 }
 
-@media (min-width: 1150px) {
+@media all and (min-width: 1150px) {
   .page-header {
     width: 1050px;
     font-size: 17px;
@@ -73,5 +75,6 @@
 
   .site-list {
     display: flex;
+    width: 380px;
   }
 }
