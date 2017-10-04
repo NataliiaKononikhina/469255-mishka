@@ -11,6 +11,43 @@
   .no-list;
 }
 
+.sit-list__item,
+.header-search,
+.basket__img,
+.sit-list-sale__item {
+  cursor: pointer;
+}
+
+.sit-list__item:hover,
+.basket__link:hover,
+.sit-list-sale__item:hover,
+.logo__image:hover {
+  opacity: 0.6;
+}
+
+.sit-list__item:active,
+.basket__link:active,
+.sit-list-sale__item:active,
+.logo__image:active {
+  opacity: 0.3;
+}
+
+.header-search__img,
+.basket__img {
+  opacity: 0.2;
+}
+
+.header-search__img:hover,
+.main-nav__basket:hover .basket__img {
+  fill: #63d1bb;
+  opacity: 1;
+}
+
+.header-search__img:active,
+.main-nav__basket:active .basket__img {
+  opacity: 0.3;
+}
+
 @media all and (min-width: 320px) {
   .page-header {
     width: 320px;
