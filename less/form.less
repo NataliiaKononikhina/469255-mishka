@@ -44,6 +44,65 @@
   border: 2px solid black;
 }
 
+.radio-indikator {
+  border-radius: 50%;
+  border: 2px solid #444444;
+  display: inline-block;
+  position: relative;
+}
+
+.checkbox-indikator {
+  border: 2px solid #444444;
+  display: inline-block;
+  position: relative;
+}
+
+.form__group,
+.form__label {
+  cursor: pointer;
+}
+
+.form__group {
+  display: flex;
+  align-items: center;
+}
+
+.form__group:hover .radio-indikator,
+.form__group:hover .checkbox-indikator {
+  border-color: #62d1ba;
+}
+
+.form__group:active .radio-indikator,
+.form__group:active .checkbox-indikator {
+  border-color: rgba(0, 0, 0, 0.3);
+}
+
+.form__radio + .radio-indikator::before {
+  .pseudo;
+  background-color: #62d1ba;
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  display: none;
+}
+
+.form__checkbox + .checkbox-indikator::before {
+  .pseudo;
+  background-image: url("../img/icon-tick.svg");
+  width: 33px;
+  height: 22px;
+  top: 50%;
+  left: 50%;
+  margin-top: -11px;
+  margin-left: -16px;
+  display: none;
+}
+
+.form__radio:checked + .radio-indikator::before,
+.form__checkbox:checked + .checkbox-indikator::before {
+  display: block;
+}
+
 @media all and (min-width: 320px) {
   .form {
     width: 260px;
@@ -53,6 +112,27 @@
     border-top: 1px solid #63d1bb;
     margin: 0;
     padding: 0;
+  }
+
+  .radio-indikator {
+    width: 39px;
+    height: 39px;
+    margin-right: 23px;
+    margin-bottom: 21px;
+  }
+
+  .checkbox-indikator {
+    width: 39px;
+    height: 39px;
+    margin-right: 23px;
+    margin-bottom: 21px;
+  }
+
+  .form__radio + .radio-indikator::before {
+    width: 16px;
+    height: 16px;
+    margin-top: -8px;
+    margin-left: -8px;
   }
 
   .form__submit {
@@ -76,6 +156,17 @@
     padding-bottom: 50px;
   }
 
+  .form__checkbox-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 468px;
+  }
+
+  .form__checkbox-wrapper .form__group {
+    width: 205px;
+  }
+
   .form__legend {
     width: 167px;
   }
@@ -86,6 +177,27 @@
     background-color: #f1f1f1;
   }
 
+  .radio-indikator {
+    width: 52px;
+    height: 52px;
+    margin-right: 28px;
+    margin-bottom: 24px;
+  }
+
+  .checkbox-indikator {
+    width: 52px;
+    height: 52px;
+    margin-right: 28px;
+    margin-bottom: 24px;
+  }
+
+  .form__radio + .radio-indikator::before {
+    width: 21px;
+    height: 21px;
+    margin-top: -10px;
+    margin-left: -10px;
+  }
+
   .form__submit {
     width: 230px;
   }
@@ -94,6 +206,10 @@
 @media all and (min-width: 1150px) {
   .form {
     width: 1050px;
+  }
+
+  .form__checkbox-wrapper {
+    width: 731px;
   }
 
   .form__legend {
