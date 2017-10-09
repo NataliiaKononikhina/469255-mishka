@@ -5,15 +5,13 @@
 }
 
 .product__name {
-  margin-bottom: 4px;
+  margin: 0;
 }
 
 .product__link {
   font-weight: bold;
   font-size: 17px;
   line-height: 24px;
-  margin-left: 28px;
-  width: 204px;
 }
 
 .product__link:hover {
@@ -27,8 +25,7 @@
 .product__desc {
   font-size: 13px;
   line-height: 30px;
-  margin-left: 28px;
-  width: 204px;
+  margin-bottom: 20px;
 }
 
 .product__price-wrapper {
@@ -42,12 +39,13 @@
   font-size: 15px;
   line-height: 24px;
   margin-bottom: 28px;
-  width: 204px;
 }
 
 .product__odrer {
   border: 0;
   background: transparent;
+  padding: 0;
+  height: 65px;
 }
 
 .product__basket {
@@ -75,16 +73,12 @@
   }
 
   .product__about {
-    width: 205px;
     padding: 0 27px;
-  }
-
-  .product__name {
-    width: 205px;
+    margin-top: 12px;
   }
 
   .product__price {
-    margin-top: 19px;
+    margin-top: 21px;
   }
 }
 
@@ -92,8 +86,7 @@
   .product {
     display: flex;
     width: 668px;
-    height: 334px;
-    margin-bottom: 54px;
+    margin-bottom: 51px;
   }
 
   .product__image {
@@ -103,14 +96,38 @@
 
   .product__about {
     width: 268px;
+    margin-top: 17px;
+    padding-left: 25px;
+  }
+
+  .product__link {
+    font-size: 20px;
+  }
+
+  .product__desc {
+    font-size: 15px;
+    margin-bottom: 176px;
+  }
+
+  .product__price-wrapper {
+    margin-left: 5px;
+    width: 270px;
+  }
+
+  .product__price {
+    font-size: 17px;
   }
 }
 
 @media all and (min-width: 1150px) {
+  .page-main__products {
+    margin-bottom: 55px;
+  }
+
   .product {
     display: block;
     width: 315px;
-    height: 659px;
+    margin: 0;
   }
 
   .product__image {
@@ -119,7 +136,7 @@
   }
 
   .product__about {
-    width: 260px;
+    margin-top: 11px;
   }
 
   .product__about:hover {
@@ -128,5 +145,14 @@
 
   .product__about:active {
     box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+  }
+
+  .product__desc {
+    margin-bottom: 39px;
+  }
+
+  .product__price-wrapper {
+    margin: 0;
+    width: 257px;
   }
 }

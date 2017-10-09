@@ -20,15 +20,19 @@
 .contacts__item {
   display: flex;
   font-size: 15px;
-  padding-bottom: 36px;
+  padding-bottom: 35px;
 }
 
 .contacts__value {
-  padding-right: 28px;
+  padding-right: 30px;
+}
+
+.contacts__field br {
+  line-height: 33px;
 }
 
 .contacts__field {
-  line-height: 30px;
+  line-height: 25px;
 }
 
 .contacts__link {
@@ -59,16 +63,16 @@
   }
 
   .contacts__items-wrapper {
-    margin-bottom: 9px;
-  }
-
-  .contacts__item {
-    padding-bottom: 28px;
+    margin-bottom: 3px;
   }
 
   .contacts__map {
     width: 320px;
     height: 460px;
+  }
+
+  .contacts__write {
+    margin-top: 35px;
   }
 }
 
@@ -83,18 +87,19 @@
     background-image: url("../img/icon-flag.svg");
     width: 47px;
     height: 81px;
-    top: -20px;
-    right: 0;
+    top: -25px;
+    right: 3px;
   }
 
   .contacts__about {
     width: 668px;
-    margin-bottom: 35px;
+    margin-bottom: 15px;
   }
 
   .contacts__title {
     font-size: 43px;
-    margin-bottom: 64px;
+    margin-bottom: 61px;
+    margin-left: -5px;
   }
 
   .contacts__items-wrapper {
@@ -103,6 +108,11 @@
 
   .contacts__item {
     width: 334px;
+    font-size: 17px;
+  }
+
+  .contacts__value {
+    padding-right: 25px;
   }
 
   .contacts__map {
@@ -112,30 +122,33 @@
 
   .contacts__write {
     width: 230px;
-    margin: 58px auto;
+    margin: 53px auto;
   }
 }
 
 @media all and (min-width: 1150px) {
   .contacts {
     display: flex;
-    width: 1150px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 1050px;
+    margin-top: 191px;
   }
 
   .contacts__about {
     width: 350px;
+    margin: 0;
     margin-left: 175px;
   }
 
   .contacts__title {
     font-size: 53px;
-    margin-bottom: 60px;
+    margin-bottom: 64px;
   }
 
   .contacts__title::after {
-    top: -20px;
-    right: auto;
-    left: -100px;
+    top: -21px;
+    left: -108px;
   }
 
   .contacts__items-wrapper {
@@ -143,6 +156,18 @@
   }
 
   .contacts__item {
-    padding-bottom: 36px;
+    padding-bottom: 34px;
+  }
+
+  .contacts__map {
+    width: 525px;
+    height: 457px;
+    margin-top: -31px;
+  }
+
+  .contacts__write {
+    margin: 0;
+    margin-left: 173px;
+    margin-top: -52px;
   }
 }

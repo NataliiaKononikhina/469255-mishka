@@ -10,10 +10,12 @@ if (openInIndex) {
   });
 }
 
-openInCatalog.addEventListener("click", function (evt) {
-  evt.preventDefault();
-  popup.classList.add("show-popup");
-});
+if (openInCatalog) {
+  openInCatalog.addEventListener("click", function (evt) {
+    evt.preventDefault();
+    popup.classList.add("show-popup");
+  });
+}
 
 closePopup.addEventListener("click", function (evt) {
   evt.preventDefault();
