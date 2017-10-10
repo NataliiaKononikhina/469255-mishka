@@ -5,33 +5,60 @@
 }
 
 .product__name {
-  margin-bottom: 4px;
+  margin: 0;
 }
 
 .product__link {
   font-weight: bold;
   font-size: 17px;
   line-height: 24px;
-  margin-left: 28px;
-  width: 204px;
+}
+
+.product__link:hover {
+  opacity: 0.6;
+}
+
+.product__link:active {
+  opacity: 0.3;
 }
 
 .product__desc {
   font-size: 13px;
   line-height: 30px;
-  margin-left: 28px;
-  width: 204px;
+  margin-bottom: 20px;
+}
+
+.product__price-wrapper {
+  border-top: 1px solid #ececec;
+  display: flex;
+  justify-content: space-between;
 }
 
 .product__price {
   font-weight: bold;
   font-size: 15px;
   line-height: 24px;
-  margin-left: 28px;
   margin-bottom: 28px;
-  padding-top: 21px;
-  width: 204px;
-  border-top: 1px solid #ececec;
+}
+
+.product__odrer {
+  border: 0;
+  background: transparent;
+  padding: 0;
+  height: 65px;
+}
+
+.product__basket {
+  opacity: 0.2;
+}
+
+.product__basket:hover {
+  fill: #63d1bb;
+  opacity: 1;
+}
+
+.product__basket:active {
+  opacity: 0.3;
 }
 
 @media all and (min-width: 320px) {
@@ -40,8 +67,18 @@
     margin-bottom: 29px;
   }
 
+  .product__image {
+    width: 260px;
+    height: 195px;
+  }
+
+  .product__about {
+    padding: 0 27px;
+    margin-top: 12px;
+  }
+
   .product__price {
-    margin-top: 19px;
+    margin-top: 21px;
   }
 }
 
@@ -49,15 +86,73 @@
   .product {
     display: flex;
     width: 668px;
+    margin-bottom: 51px;
+  }
+
+  .product__image {
+    width: 334px;
     height: 334px;
-    margin-bottom: 54px;
+  }
+
+  .product__about {
+    width: 268px;
+    margin-top: 17px;
+    padding-left: 25px;
+  }
+
+  .product__link {
+    font-size: 20px;
+  }
+
+  .product__desc {
+    font-size: 15px;
+    margin-bottom: 176px;
+  }
+
+  .product__price-wrapper {
+    margin-left: 5px;
+    width: 270px;
+  }
+
+  .product__price {
+    font-size: 17px;
   }
 }
 
 @media all and (min-width: 1150px) {
+  .page-main__products {
+    margin-bottom: 55px;
+  }
+
   .product {
     display: block;
     width: 315px;
-    height: 659px;
+    margin: 0;
+  }
+
+  .product__image {
+    width: 315px;
+    height: 462px;
+  }
+
+  .product__about {
+    margin-top: 11px;
+  }
+
+  .product__about:hover {
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .product__about:active {
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+  }
+
+  .product__desc {
+    margin-bottom: 39px;
+  }
+
+  .product__price-wrapper {
+    margin: 0;
+    width: 257px;
   }
 }

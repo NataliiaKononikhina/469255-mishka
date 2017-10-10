@@ -2,13 +2,49 @@
   font-weight: bold;
   font-size: 17px;
   line-height: 24px;
-  border-bottom: 1px solid #ececec;
   margin: 0 auto;
   display: flex;
 }
 
 .site-list {
   .no-list;
+}
+
+.site-list__item,
+.header-search,
+.basket__img,
+.site-list-sale__item {
+  cursor: pointer;
+}
+
+.site-list__item:hover,
+.basket__link:hover,
+.site-list-sale__item:hover,
+.logo__image:hover {
+  opacity: 0.6;
+}
+
+.site-list__item:active,
+.basket__link:active,
+.site-list-sale__item:active,
+.logo__image:active {
+  opacity: 0.3;
+}
+
+.header-search__img,
+.basket__img {
+  opacity: 0.2;
+}
+
+.header-search__img:hover,
+.main-nav__basket:hover .basket__img {
+  fill: #63d1bb;
+  opacity: 1;
+}
+
+.header-search__img:active,
+.main-nav__basket:active .basket__img {
+  opacity: 0.3;
 }
 
 @media all and (min-width: 320px) {
@@ -89,8 +125,9 @@
 
 @media all and (min-width: 768px) {
   .page-header {
-    width: 668px;
+    width: 100%;
     font-size: 15px;
+    background: linear-gradient(#ffffff 88px, #dfdfdf 1px, #f1f1f1 100%-88px);
   }
 
   .main-nav {
@@ -117,8 +154,8 @@
     order: 1;
   }
 
-  .sit-list__item {
-    padding: 23px 0;
+  .site-list__item {
+    padding: 16px 0;
   }
 
   .logo {
@@ -128,7 +165,7 @@
 
   .header-search {
     border-left: 1px solid #ececec;
-    padding: 23px 32px;
+    padding: 37px 32px 28px;
     margin-left: auto;
   }
 
@@ -138,11 +175,15 @@
 
   .main-nav__basket {
     border-left: 1px solid #ececec;
-    padding: 23px 0;
+    padding: 29px 0;
   }
 
   .basket__img {
-    padding: 0 32px;
+    padding: 4px 29px;
+  }
+
+  .basket__link {
+    font-size: 17px;
   }
 
   .main-nav__info {
@@ -151,14 +192,13 @@
     font-size: 15px;
     font-weight: normal;
     margin-left: auto;
-    padding: 23px 0;
+    padding: 16px 0;
     order: 5;
   }
 }
 
 @media all and (min-width: 1150px) {
   .page-header {
-    width: 1050px;
     font-size: 17px;
   }
 
@@ -173,8 +213,9 @@
     order: 0;
   }
 
-  .sit-list__item {
+  .site-list__item {
     order: 0;
+    padding-top: 30px;
 
     &:first-child {
       border-right: 1px solid #ececec;
@@ -189,10 +230,12 @@
   .logo {
     padding: 14px 0;
     order: 1;
+    margin: 0 auto;
   }
 
   .header-search {
     order: 2;
+    margin: 0;
   }
 
   .main-nav__basket {
@@ -203,7 +246,7 @@
     display: flex;
     .no-list;
     width: 316px;
-    padding: 23px 0;
+    padding: 17px 0;
     padding-right: 100px;
     justify-content: space-between;
     font-size: 15px;

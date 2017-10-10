@@ -95,17 +95,45 @@
   .page-footer__wrapper {
     width: 668px;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
+    padding: 43px 0;
+    position: relative;
+
+    &::before {
+      .pseudo;
+      background-image: url("../img/logo-mobile.svg");
+      position: absolute;
+      top: 57px;
+      left: 0;
+      width: 102px;
+      height: 38px;
+    }
   }
 
   .social {
     width: 260px;
     border-bottom: none;
+    margin: 0;
+  }
+
+  .copyright {
+    margin: 0;
+    padding-right: 0;
+    padding-left: 23px;
+  }
+
+  .copyright__link::before {
+    right: 0;
   }
 }
 
 @media all and (min-width: 1150px) {
   .page-footer__wrapper {
     width: 1050px;
+    margin-top: 101px;
+  }
+
+  .social {
+    margin-right: 190px;
   }
 }

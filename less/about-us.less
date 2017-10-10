@@ -82,11 +82,13 @@
 @media all and (min-width: 768px) {
   .about-us {
     width: 668px;
+    margin-bottom: 26px;
   }
 
   .about-us__title {
     font-size: 43px;
     margin-bottom: 59px;
+    margin-left: -5px;
   }
 
   .about-us__list {
@@ -97,6 +99,32 @@
 
   .about-us__item {
     flex-basis: 334px;
+    padding-top: 55px;
+    padding-bottom: 60px;
+
+    &--flower {
+      order: 1;
+    }
+
+    &--money {
+      order: 3;
+    }
+
+    &--heart {
+      order: 5;
+    }
+
+    &--ball {
+      order: 2;
+    }
+
+    &--rocket {
+      order: 4;
+    }
+
+    &--gift {
+      order: 6;
+    }
   }
 }
 
@@ -104,6 +132,7 @@
   .about-us {
     width: 700px;
     padding: 0 175px;
+    margin-bottom: 35px;
   }
 
   .about-us__title {

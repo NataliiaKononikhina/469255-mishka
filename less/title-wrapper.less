@@ -27,8 +27,6 @@
 }
 
 .title-wrapper__item {
-  position: relative;
-
   &:first-child {
     background-color: #63d1bb;
   }
@@ -40,6 +38,8 @@
 
 .title-wrapper__link {
   color: #ffffff;
+  position: relative;
+  display: block;
 
   &--interior::after {
     .pseudo;
@@ -60,6 +60,10 @@
   }
 }
 
+.title-wrapper__link:active {
+  opacity: 0.3;
+}
+
 @media all and (min-width: 320px) {
   .title-wrapper {
     width: 320px;
@@ -70,7 +74,7 @@
     margin: 0 auto;
   }
 
-  .title-wrapper__item {
+  .title-wrapper__link {
     padding: 25px 28px 30px;
   }
 }
@@ -91,8 +95,8 @@
     width: 668px;
   }
 
-  .title-wrapper__item {
-    width: 334px;
+  .title-wrapper__link {
+    width: 278px;
   }
 }
 
@@ -112,7 +116,7 @@
     width: 1050px;
   }
 
-  .title-wrapper__item {
-    width: 525px;
+  .title-wrapper__link {
+    width: 469px;
   }
 }
