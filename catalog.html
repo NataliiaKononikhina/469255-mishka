@@ -139,7 +139,13 @@
 
       <section class="production">
         <h4 class="production__title">Процесс производства</h4>
-        <div class="production-video"><img src="img/video-mobile@1x.jpg" width="260" alt=""></div>
+        <div class="production-video">
+          <picture>
+            <source media="(min-width: 1150px)" srcset="img/video-desktop@1x.jpg 1x, img/video-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)" srcset="img/video-tablet@1x.jpg 1x, img/video-tablet@2x.jpg 2x">
+            <img src="img/video-mobile@1x.jpg" srcset="img/video-mobile@2x.jpg 2x" alt="Вязаные корзинки">
+          </picture>
+        </div>
         <div class="production__content-wrapper">
           <p class="production__text">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.
           </p>
