@@ -4,6 +4,11 @@
   color: #000000;
 }
 
+.product__image-link {
+  height: auto;
+  display: inline-block;
+}
+
 .product__name {
   margin: 0;
 }
@@ -125,7 +130,11 @@
   }
 
   .product__about {
-    margin-top: 11px;
+    box-sizing: border-box;
+    width: 316px;
+    height: 189px;
+    padding: 0 27px;
+    margin-top: 0;
   }
 
   .product__about:hover {
@@ -136,12 +145,18 @@
     box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
   }
 
+  .product__name {
+    line-height: 24px;
+    margin-top: 19px;
+    margin-bottom: 5px;
+  }
+
   .product__desc {
-    margin-bottom: 39px;
+    margin-bottom: 0;
   }
 
   .product__price-wrapper {
-    margin: 0;
     width: 257px;
+    margin-left: 0;
   }
 }
