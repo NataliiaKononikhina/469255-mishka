@@ -4,6 +4,8 @@
   line-height: 24px;
   margin: 0 auto;
   display: flex;
+  position: absolute;
+  z-index: 2;
 }
 
 .site-list {
@@ -49,7 +51,7 @@
 
 @media all and (min-width: 320px) {
   .page-header {
-    width: 320px;
+    width: 100%;
   }
 
   .main-nav {
@@ -111,13 +113,7 @@
 
 @media all and (min-width: 768px) {
   .page-header {
-    width: 100%;
     font-size: 15px;
-    background: linear-gradient(#ffffff 88px, #dfdfdf 1px, #f1f1f1 calc(100%-88px));
-  }
-
-  .page-header-index {
-    background: linear-gradient(#ffffff 88px, #dfdfdf 1px, #f9f9f9 calc(100%-88px));
   }
 
   .main-nav {
