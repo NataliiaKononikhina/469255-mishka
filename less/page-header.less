@@ -4,6 +4,8 @@
   line-height: 24px;
   margin: 0 auto;
   display: flex;
+  position: absolute;
+  z-index: 2;
 }
 
 .site-list {
@@ -20,14 +22,14 @@
 .site-list__item:hover,
 .basket__link:hover,
 .site-list-sale__item:hover,
-.logo__image:hover {
+.page-header__logo-image:hover {
   opacity: 0.6;
 }
 
 .site-list__item:active,
 .basket__link:active,
 .site-list-sale__item:active,
-.logo__image:active {
+.page-header__logo-image:active {
   opacity: 0.3;
 }
 
@@ -49,7 +51,7 @@
 
 @media all and (min-width: 320px) {
   .page-header {
-    width: 320px;
+    width: 100%;
   }
 
   .main-nav {
@@ -57,25 +59,11 @@
     margin: 0 auto;
   }
 
-  .logo {
+  .page-header__logo {
     margin-left: 87px;
     margin-right: 49px;
     margin-top: 5px;
-    width: 98px;
-    height: 40px;
     display: inline-block;
-  }
-
-  .logo__image {
-    position: relative;
-
-    &::before {
-      .pseudo;
-      background-image: url("../img/logo-mobile.svg");
-      width: 98px;
-      height: 40px;
-      left: 0;
-    }
   }
 
   .site-list {
@@ -125,9 +113,7 @@
 
 @media all and (min-width: 768px) {
   .page-header {
-    width: 100%;
     font-size: 15px;
-    background: linear-gradient(#ffffff 88px, #dfdfdf 1px, #f1f1f1 100%-88px);
   }
 
   .main-nav {
@@ -158,9 +144,9 @@
     padding: 16px 0;
   }
 
-  .logo {
+  .page-header__logo {
     margin: 0;
-    margin-right: 200px;
+    padding-top: 22px;
   }
 
   .header-search {
@@ -227,10 +213,11 @@
     }
   }
 
-  .logo {
-    padding: 14px 0;
+  .page-header__logo {
+    padding: 9px 0 0 0;
     order: 1;
     margin: 0 auto;
+    margin-left: 71px;
   }
 
   .header-search {
