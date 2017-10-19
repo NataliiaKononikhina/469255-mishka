@@ -5,6 +5,11 @@
 
 .page-footer__wrapper {
   margin: 0 auto;
+  width: 320px;
+}
+
+.page-footer__logo {
+  display: none;
 }
 
 .social__list {
@@ -12,6 +17,15 @@
   display: flex;
   justify-content: space-between;
   width: 140px;
+  padding: 0 60px;
+  padding-top: 24px;
+  padding-bottom: 28px;
+}
+
+.social {
+  width: 267px;
+  border-bottom: 1px solid #e5e5e5;
+  margin: 0 auto;
 }
 
 .social__item {
@@ -49,6 +63,8 @@
 .copyright {
   position: relative;
   width: 185px;
+  padding: 23px 39px;
+  margin: 0 auto;
 }
 
 .copyright__text {
@@ -65,34 +81,6 @@
   height: 34px;
   top: 21px;
   right: 42px;
-}
-
-
-@media all and (min-width: 320px) {
-  .page-footer__wrapper {
-    width: 320px;
-  }
-
-  .page-footer__logo {
-    display: none;
-  }
-
-  .social {
-    width: 267px;
-    border-bottom: 1px solid #e5e5e5;
-    margin: 0 auto;
-  }
-
-  .social__list {
-    padding: 0 60px;
-    padding-top: 24px;
-    padding-bottom: 28px;
-  }
-
-  .copyright {
-    padding: 23px 39px;
-    margin: 0 auto;
-  }
 }
 
 @media all and (min-width: 768px) {

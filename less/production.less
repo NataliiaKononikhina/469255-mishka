@@ -1,18 +1,28 @@
 .production {
   border: 1px solid #ededed;
   margin: 0 auto;
+  width: 260px;
+  margin-bottom: 56px;
+  position: relative;
 }
 
-.production-video {
-  position: relative;
+.production__play {
+  position: absolute;
+  border: none;
+  background: transparent;
+  width: 102px;
+  height: 78px;
+  padding: 0;
+  top: 130px;
+  left: 80px;
+  cursor: pointer;
 
   &::before {
     .pseudo;
     background-image: url("../img/icon-play.svg");
     width: 102px;
     height: 78px;
-    left: 78px;
-    top: 38px;
+    left: 0;
   }
 }
 
@@ -22,6 +32,8 @@
   line-height: 24px;
   color: #000000;
   position: relative;
+  padding-left: 59px;
+  margin-left: 30px;
 }
 
 .production__title::before {
@@ -35,36 +47,18 @@
 
 .production__text {
   margin: 0 auto;
+  padding: 0 35px;
+  margin-top: 24px;
+  margin-bottom: 20px;
+  font-size: 13px;
+  line-height: 24px;
 }
 
 .production__order {
   display: block;
   margin: 0 auto;
-}
-
-@media all and (min-width: 320px) {
-  .production {
-    width: 260px;
-    margin-bottom: 56px;
-  }
-
-  .production__title {
-    padding-left: 59px;
-    margin-left: 30px;
-  }
-
-  .production__text {
-    padding: 0 35px;
-    margin-top: 24px;
-    margin-bottom: 20px;
-    font-size: 13px;
-    line-height: 24px;
-  }
-
-  .production__order {
-    width: 192px;
-    margin-bottom: 29px;
-  }
+  width: 192px;
+  margin-bottom: 29px;
 }
 
 @media all and (min-width: 768px) {
@@ -76,11 +70,11 @@
 
   .production-video {
     order: 1;
+  }
 
-    &::before {
-      left: 282px;
-      top: 188px;
-    }
+  .production__play {
+    top: 187px;
+    left: 283px;
   }
 
   .production__title {
@@ -118,16 +112,25 @@
     cursor: pointer;
   }
 
+  .production__play {
+    left: 290px;
+  }
+
+  .production__play:hover {
+     transform: scale(1.2);
+  }
+
+  .production__play:active {
+    transform: scale(0.8);
+    opacity: 0.3;
+  }
+
   .production:hover {
     box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
   }
 
   .production:active {
     box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
-  }
-
-  .production-video::before {
-    left: 289px;
   }
 
   .production__title {
