@@ -1,7 +1,7 @@
 .form {
   margin: 0 auto;
   width: 260px;
-  margin-top: 21px;
+  margin-top: 24px;
 }
 
 @font: "OpenSans", "Arial", "Helvetica", sans-serif;
@@ -26,10 +26,23 @@
 
 .form__list {
   border: none;
-  border-top: 1px solid #63d1bb;
   margin: 0;
   margin-top: 10px;
   padding: 0
+}
+
+.form__list-wrapper {
+  position: relative;
+
+  &::after {
+    content: "";
+    border: 0.5px solid #63d1bb;
+    position: absolute;
+    width: 260px;
+    right: 0;
+    top: 9px;
+    z-index: -1;
+  }
 }
 
 .form__legend {
@@ -40,7 +53,10 @@
   color: #63d1bb;
   text-transform: uppercase;
   padding-right: 26px;
-  margin-bottom: 22px;
+  margin-bottom: 25px;
+  margin-left: -2px;
+  width: max-content;
+  background-color: #ffffff;
 }
 
 .form__label {
@@ -49,6 +65,7 @@
   font-size: 17px;
   line-height: 17px;
   color: #000000;
+  margin-top: -4px;
 }
 
 .form__inscription {
@@ -101,12 +118,13 @@
 .form__checkbox + .checkbox-indikator::before {
   .pseudo;
   background-image: url("../img/icon-tick.svg");
-  width: 33px;
+  background-size: 23px;
+  width: 23px;
   height: 22px;
   top: 50%;
   left: 50%;
-  margin-top: -11px;
-  margin-left: -16px;
+  margin-top: -12px;
+  margin-left: -12px;
   display: none;
 }
 
@@ -115,29 +133,38 @@
   display: block;
 }
 
-.radio-indikator,
 .checkbox-indikator {
   border: 2px solid #444444;
   display: inline-block;
   position: relative;
-  width: 37px;
-  height: 37px;
+  width: 36px;
+  height: 35px;
   margin: 0;
   margin-right: 23px;
+  margin-top: -1px;
+  margin-bottom: 3px;
 }
 
 .radio-indikator {
   border-radius: 50%;
+  border: 2px solid #444444;
+  display: inline-block;
+  position: relative;
+  width: 36px;
+  height: 36px;
+  margin: 0;
+  margin-right: 23px;
 }
 
 .form__list-wrapper-name {
   .form__group {
     flex-direction: column;
     align-items: flex-start;
+    margin-bottom: 26px;
   }
 
   .form__label {
-    margin-bottom: 15px;
+    margin-bottom: 13px;
   }
 
   .form__input {
@@ -145,23 +172,46 @@
   }
 }
 
+.form__telephone-mail-wrapper {
+  margin-top: -6px;
+
+  .form__legend {
+    margin-bottom: 19px;
+  }
+}
+
 input[type="tel"],
 input[type="email"] {
-  padding-bottom: 9px;
+  padding-bottom: 14px;
   margin-bottom: 21px;
 }
 
+.form__img {
+  position: absolute;
+  top: 35px;
+  right: 6px;
+  opacity: 0.2;
+}
+
+input:hover + .form__img,
+input:focus + .form__img {
+  opacity: 1;
+  fill: #62d1ba;
+}
+
 textarea {
-  padding: 16px;
+  padding: 15px;
+  padding-bottom: 20px;
   box-sizing: border-box;
-  margin-bottom: 12px;
+  margin-bottom: 6px;
 }
 
 .form__submit {
   width: 260px;
   margin-top: 27px;
-  margin-bottom: 52px;
-  padding: 14px 0;
+  margin-bottom: 54px;
+  padding: 15px 0;
+  font-size: 17px;
 }
 
 @media all and (min-width: 768px) {
@@ -179,16 +229,28 @@ textarea {
 
   .form__list-wrapper {
     display: flex;
-    padding-top: 56px;
+    padding-top: 55px;
     padding-bottom: 27px;
+
+    &::after {
+      display: none;
+    }
   }
 
   .form__list-wrapper-color {
     padding-top: 50px;
   }
 
+  .form__checkbox + .checkbox-indikator::before {
+    background-size: 33px;
+    width: 33px;
+    height: 33px;
+    margin-top: -15px;
+    margin-left: -15px;
+  }
+
   .form__list-wrapper-name {
-    padding-top: 64px;
+    padding-top: 66px;
     padding-bottom: 10px;
 
     .form__legend {
@@ -197,16 +259,16 @@ textarea {
 
     .form__group {
       flex-direction: row;
-      margin-bottom: 41px;
+      margin-bottom: 43px;
       display: flex;
     }
 
     .form__input {
       font-size: 19px;
-      padding-bottom: 11px;
+      padding-bottom: 13px;
       margin-left: 24px;
       padding-left: 17px;
-      margin-top: -5px;
+      margin-top: -9px;
       flex: 1;
     }
   }
@@ -232,8 +294,13 @@ textarea {
   }
 
   .form__legend {
-    width: 139px;
+    width: 141px;
     padding-top: 18px;
+    background-color: transparent;
+  }
+
+  br {
+    display: none;
   }
 
   .form__color-wrapper,
@@ -267,8 +334,18 @@ textarea {
     .form__list-wrapper {
       padding-bottom: 1px;
       padding-left: 15px;
-      padding-top: 48px;
+      padding-top: 51px;
     }
+  }
+
+  .form__img--tell {
+    top: 64px;
+    right: 43px;
+  }
+
+  .form__img--email {
+    top: 13px;
+    right: 38px;
   }
 
   .radio-indikator,
@@ -276,6 +353,7 @@ textarea {
     width: 48px;
     height: 48px;
     margin-right: 28px;
+    margin-bottom: 1px;
   }
 
   .form__radio + .radio-indikator::before {
@@ -304,10 +382,11 @@ textarea {
   .form__submit-wrapper {
     width: 668px;
     margin: 0 auto;
-    margin-top: 7px;
+    margin-top: 19px;
+    margin-bottom: 49px;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: baseline;
   }
 
   .form__inscription {
@@ -330,6 +409,10 @@ textarea {
 
   .form__checkbox-wrapper {
     width: 731px;
+  }
+
+  .checkbox-indikator {
+    width: 51px;
   }
 
   .form__legend {
@@ -358,11 +441,21 @@ textarea {
     width: 680px;
   }
 
+  .form__img--tell {
+    right: 125px;
+  }
+
+  .form__img--email {
+    right: 120px;
+  }
+
   .form__input-textarea {
     width: 700px;
   }
 
   .form__submit-wrapper {
     width: 700px;
+    margin-top: 16px;
+    margin-bottom: -52px;
   }
 }

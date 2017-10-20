@@ -16,7 +16,7 @@
 
 .main-nav__toggle {
   position: relative;
-  top: -13px;
+  top: -12px;
   border: 0;
   background-color: transparent;
   width: 21px;
@@ -32,14 +32,14 @@
 }
 
 .main-nav__item-mob {
-  padding: 25px 10px 29px;
+  padding: 25px 0 29px 22px;
   border-top: 1px solid #ececec;
   border-bottom: 1px solid #ececec;
 }
 
 .page-header__logo {
   margin-left: 87px;
-  margin-right: 49px;
+  margin-right: 62px;
   margin-top: 5px;
   display: inline-block;
 }
@@ -47,6 +47,10 @@
 .site-list {
   .no-list;
   margin-top: 14px;
+
+  .main-nav__item-mob {
+    padding-left: 46px;
+  }
 }
 
 .header-search__input {
@@ -74,6 +78,9 @@
 .header-search__img,
 .basket__img {
   opacity: 0.2;
+  position: relative;
+  left: -20px;
+  top: 2px;
 }
 
 .header-search__img:hover,
@@ -118,7 +125,7 @@
   .site-list {
     display: flex;
     justify-content: space-between;
-    width: 307px;
+    width: 304px;
     padding: 0;
     margin: 0;
     order: 1;
@@ -126,6 +133,10 @@
 
   .site-list__item {
     padding: 16px 0;
+  }
+
+  .site-list .main-nav__item-mob {
+    padding-left: 0;
   }
 
   .page-header__logo {
@@ -139,8 +150,14 @@
     margin-left: auto;
   }
 
-  .header-search__input {
+  .header-search__span {
     display: none;
+  }
+
+  .header-search__img,
+  .basket__img {
+    left: 0;
+    top: 0;
   }
 
   .main-nav__basket {
