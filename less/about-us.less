@@ -2,7 +2,21 @@
   color: #000000;
   font-weight: bold;
   margin: 0 auto;
-  margin-bottom: 7px;
+  margin-bottom: 5px;
+  margin-top: 71px;
+  width: 260px;
+  position: relative;
+
+  &::before {
+    .pseudo;
+    background-image: url("../img/bg-zigzag-line.svg");
+    background-repeat: repeat-x;
+    width: 320px;
+    height: 25px;
+    left: -30px;
+    top: -45px;
+    background-size: contain;
+  }
 }
 
 .about-us__title {
@@ -73,16 +87,16 @@
   }
 }
 
-@media all and (min-width: 320px) {
-  .about-us {
-    width: 260px;
-  }
-}
-
 @media all and (min-width: 768px) {
   .about-us {
     width: 668px;
     margin-bottom: 26px;
+
+    &::before {
+      width: 800px;
+      left: -58px;
+      top: -81px;
+    }
   }
 
   .about-us__title {
@@ -133,6 +147,12 @@
     width: 700px;
     padding: 0 175px;
     margin-bottom: 35px;
+
+    &::before {
+      width: 1055px;
+      left: 0;
+      top: -101px;
+    }
   }
 
   .about-us__title {

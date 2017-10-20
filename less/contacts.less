@@ -2,10 +2,24 @@
   display: flex;
   flex-direction: column;
   margin: 0 auto;
+  width: 320px;
+  position: relative;
+
+  &::before {
+    .pseudo;
+    background-image: url("../img/bg-zigzag-line.svg");
+    background-repeat: repeat-x;
+    width: 350px;
+    height: 25px;
+    left: -14px;
+    top: -35px;
+    background-size: contain;
+  }
 }
 
 .contacts__about {
   margin: 0 auto;
+  width: 260px;
 }
 
 .contacts__title {
@@ -17,10 +31,19 @@
   position: relative;
 }
 
+.contacts__items-wrapper {
+  margin-bottom: 3px;
+}
+
 .contacts__item {
   display: flex;
   font-size: 15px;
   padding-bottom: 35px;
+}
+
+.contacts__map {
+  width: 320px;
+  height: 460px;
 }
 
 .contacts__value {
@@ -50,36 +73,20 @@
 
 .contacts__write {
   margin: 38px auto;
-  height: 14px;
-}
-
-@media all and (min-width: 320px) {
-  .contacts {
-    width: 320px;
-  }
-
-  .contacts__about {
-    width: 260px;
-  }
-
-  .contacts__items-wrapper {
-    margin-bottom: 3px;
-  }
-
-  .contacts__map {
-    width: 320px;
-    height: 460px;
-  }
-
-  .contacts__write {
-    margin-top: 35px;
-  }
+  padding: 14px 0;
+  margin-top: 37px;
 }
 
 @media all and (min-width: 768px) {
   .contacts {
     width: 768px;
     margin-top: 113px;
+
+    &::before {
+      width: 800px;
+      left: -18px;
+      top: -49px;
+    }
   }
 
   .contacts__title::after {
@@ -123,6 +130,7 @@
   .contacts__write {
     width: 230px;
     margin: 53px auto;
+    margin-bottom: 56px;
   }
 }
 
@@ -133,6 +141,13 @@
     flex-wrap: wrap;
     width: 1050px;
     margin-top: 191px;
+    margin-bottom: 106px;
+
+    &::before {
+      width: 1050px;
+      left: 0;
+      top: -124px;
+    }
   }
 
   .contacts__about {
