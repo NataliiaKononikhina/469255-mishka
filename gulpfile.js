@@ -37,8 +37,8 @@ gulp.task("style", function () {
     .pipe(postcss([
       autoprefixer()
     ]))
-    // .pipe(gulp.dest("css"))
-    // .pipe(server.stream())
+    .pipe(gulp.dest(destFolder + "/css"))
+    .pipe(server.stream())
     .pipe(minify())
     .pipe(rename("style.min.css"))
     .pipe(gulp.dest(destFolder + "/css"));
@@ -82,4 +82,5 @@ gulp.task("serve", function() {
 
   gulp.watch("less/**/*.less", ["style"]);
   gulp.watch("*.html", ["html"]);
+  gulp.watch("js/*.js", ["copy"]);
 });

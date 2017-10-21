@@ -2,8 +2,9 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
     <title>HTML Academy: Мишка</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body>
     <header class="page-header page-header-index">
@@ -15,14 +16,14 @@
             <img src="img/logo-mobile.svg" alt="Мишка" class="page-header__logo-image page-header__link">
           </picture>
         </a>
-        <button class="main-nav__toggle"><span class="visually-hidden">Открыть меню</span></button>
+        <button class="main-nav__toggle"></button>
         <ul class="main-nav__list site-list">
           <li class="site-list__item main-nav__item-mob"><a href="catalog.html" class="page-header__link">Каталог товаров</a></li>
           <li class="site-list__item main-nav__item-mob"><a href="form.html" class="page-header__link">Вязание на заказ</a></li>
         </ul>
         <div class="main-nav__header-search header-search main-nav__item-mob">
           <a href="#" class="basket__link page-header__link">
-            <svg version="1.1" id="Layer_1" class="header-search__img" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="17.6px" height="17.6px" viewBox="-0.8 -0.8 17.6 17.6" enable-background="new -0.8 -0.8 17.6 17.6" xml:space="preserve">
+            <svg class="header-search__img" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="17px" height="17px" viewBox="-0.8 -0.8 17.6 17.6" enable-background="new -0.8 -0.8 17.6 17.6" xml:space="preserve">
               <path d="M16.47,14.93l-3.415-3.415C14.02,10.226,14.6,8.634,14.6,6.899c0-4.253-3.447-7.699-7.7-7.699 S-0.8,2.646-0.8,6.899s3.446,7.7,7.699,7.7c1.734,0,3.326-0.58,4.613-1.546l3.417,3.416c0.203,0.202,0.418,0.33,0.771,0.33 c0.607,0,1.1-0.492,1.1-1.1C16.8,15.459,16.739,15.2,16.47,14.93z M1.399,6.899c0-3.038,2.462-5.5,5.5-5.5s5.5,2.462,5.5,5.5 s-2.462,5.5-5.5,5.5S1.399,9.938,1.399,6.899z"/>
             </svg>
             <span class="header-search__span">Поиск по сайту</span>
@@ -30,7 +31,7 @@
         </div>
         <div class="main-nav__basket basket main-nav__item-mob">
           <a href="#" class="basket__link page-header__link">
-            <svg version="1.1" id="Layer_1" class="basket__img" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="20.294px" height="18.849px" viewBox="264.205 370.961 20.294 18.849" enable-background="new 264.205 370.961 20.294 18.849" xml:space="preserve">
+            <svg class="basket__img" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20px" height="19px" viewBox="264.205 370.961 20.294 18.849" enable-background="new 264.205 370.961 20.294 18.849" xml:space="preserve">
               <path d="M283.75,378.19h-3.151l-3.407-6.814c-0.185-0.37-0.634-0.52-1.006-0.335 c-0.371,0.186-0.521,0.636-0.335,1.006l3.071,6.143h-9.138l3.072-6.143c0.185-0.371,0.035-0.821-0.335-1.006 c-0.37-0.185-0.821-0.035-1.006,0.335l-3.407,6.814h-3.151c-0.414,0-0.75,0.336-0.75,0.75s0.336,0.75,0.75,0.75h0.157l0.855,2.991 c-0.187,0.137-0.316,0.347-0.316,0.595c0,0.396,0.309,0.71,0.697,0.739l1.656,5.795h12.697l1.656-5.795 c0.388-0.028,0.698-0.344,0.698-0.739c0-0.249-0.129-0.459-0.316-0.596l0.854-2.991h0.157c0.414,0,0.75-0.336,0.75-0.75 S284.164,378.19,283.75,378.19z M279.569,388.311h-10.433l-1.224-4.284h12.881L279.569,388.311z M281.222,382.526h-13.739 l-0.81-2.836h15.359L281.222,382.526z"/>
             </svg>
             <span>Корзина: пока пуста</span>
@@ -81,7 +82,7 @@
           </picture>
           <div class="best-product__bottom-wrapper">
             <span class="best-product__price">Цена: 990 руб.</span>
-            <button class="best-product__order button" type="button">Заказать</button>
+            <button class="best-product__order button js-openOrderModal" type="button">Заказать</button>
           </div>
         </div>
       </article>
@@ -148,7 +149,7 @@
             <label class="order__option" for="size-m">M</label>
             <input class="order__radio visually-hidden" type="radio" name="size" id="size-l">
             <label class="order__option" for="size-l">L</label>
-            <input type="submit" value="Добавить" class="order__add button">
+            <input type="submit" value="Добавить" class="order__add button js-closeOrderModal">
           </form>
         </section>
       </div>
@@ -163,7 +164,7 @@
           <ul class="social__list">
             <li class="social__item">
               <a href="#" class="social__link social__link--instagram">
-                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="21.769px" height="21.334px" viewBox="53.115 53.19 21.769 21.334" enable-background="new 53.115 53.19 21.769 21.334" xml:space="preserve">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="22px" height="21px" viewBox="53.115 53.19 21.769 21.334" enable-background="new 53.115 53.19 21.769 21.334" xml:space="preserve">
                   <g id="instagram">
                     <g>
                       <path d="M74.881,65.336c-0.013-2.395-0.344-4.788-0.303-7.135c-0.023-0.788-0.086-1.535-0.152-2.278 c-0.105-0.3-0.111-0.699-0.152-1.062c-0.26-0.17-0.222-0.64-0.456-0.835c-0.423-0.233-1.201-0.114-1.744-0.22
@@ -217,7 +218,7 @@
             </li>
             <li class="social__item">
               <a href="#" class="social__link social__link--facebook">
-                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="14.962px" height="27.718px" viewBox="56.519 49.996 14.962 27.718" enable-background="new 56.519 49.996 14.962 27.718" xml:space="preserve">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="15px" height="28px" viewBox="56.519 49.996 14.962 27.718" enable-background="new 56.519 49.996 14.962 27.718" xml:space="preserve">
                   <g id="facebook">
                     <g>
                       <path d="M68.181,55.188c1.026,0.029,1.993,0,2.681-0.3c0.391-0.818,0.556-1.854,0.619-2.989 c-0.19-0.015-0.062-0.337-0.207-0.399c-0.029-0.202-0.278-0.195-0.309-0.398c-0.277-0.165-0.457-0.422-0.723-0.598
@@ -243,7 +244,7 @@
             </li>
             <li class="social__item">
               <a href="#" class="social__link social__link--twitter">
-                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="23.494px" height="20.168px" viewBox="52.253 53.771 23.494 20.168" enable-background="new 52.253 53.771 23.494 20.168" xml:space="preserve">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="23px" height="20px" viewBox="52.253 53.771 23.494 20.168" enable-background="new 52.253 53.771 23.494 20.168" xml:space="preserve">
                   <g id="twitter">
                     <g>
                       <path d="M75.706,57.855c-0.227-0.366-0.909-0.277-1.407-0.371h-1.112c0.142-0.353,0.343-0.646,0.52-0.963 c0.056-0.438,0.254-0.734,0.223-1.26c0.129-0.167,0.176-0.417,0.296-0.593c0.104-0.144,0.242-0.477,0.074-0.667
