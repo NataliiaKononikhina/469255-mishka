@@ -24,8 +24,8 @@
     "editorconfig": "editorconfig-cli",
     "stylelint": "stylelint 'less/**/*.less' --syntax less",
     "test": "npm run editorconfig && npm run stylelint",
-    "build": "gulp build && gulp serve",
-    "start": "gulp serve"
+    "build": "gulp build",
+    "start": "gulp build && gulp serve"
   },
   "browserslist": [
     "last 2 versions",
