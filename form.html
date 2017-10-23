@@ -64,7 +64,7 @@
               <div class="form__group">
                 <input class="form__radio visually-hidden" type="radio" id="accessories-1" value="Аксессуар для интерьера" name="type" checked>
                 <span class="radio-indikator"></span>
-                <label class="form__label" for="accessories-1">Аксессуар для <br>интерьера</label>
+                <label class="form__label" for="accessories-1">Аксессуар для интерьера</label>
               </div>
               <div class="form__group">
                 <input class="form__radio visually-hidden" type="radio" id="accessories-2" value="Детская игрушка" name="type">
@@ -80,32 +80,32 @@
               <div class="form__legend">Цвет</div>
               <div class="form__checkbox-wrapper">
                 <div class="form__group">
-                  <input class="form__checkbox visually-hidden" type="checkbox" id="color-1" value="Белый" name="color" checked>
+                  <input class="form__checkbox visually-hidden" type="checkbox" id="color-1" value="Белый" name="color" checked tabindex="0">
                   <span class="checkbox-indikator"></span>
                   <label class="form__label" for="color-1">Белый</label>
                 </div>
                 <div class="form__group">
-                  <input class="form__checkbox visually-hidden" type="checkbox" id="color-2" value="Серый" name="color" checked>
+                  <input class="form__checkbox visually-hidden" type="checkbox" id="color-2" value="Серый" name="color" checked tabindex="0">
                   <span class="checkbox-indikator"></span>
                   <label class="form__label" for="color-2">Серый</label>
                 </div>
                 <div class="form__group">
-                  <input class="form__checkbox visually-hidden" type="checkbox" id="color-3" value="Тиффани" name="color">
+                  <input class="form__checkbox visually-hidden" type="checkbox" id="color-3" value="Тиффани" name="color" tabindex="0">
                   <span class="checkbox-indikator"></span>
                   <label class="form__label" for="color-3">«Тиффани»</label>
                 </div>
                 <div class="form__group">
-                  <input class="form__checkbox visually-hidden" type="checkbox" id="color-4" value="Черный" name="color">
+                  <input class="form__checkbox visually-hidden" type="checkbox" id="color-4" value="Черный" name="color" tabindex="0">
                   <span class="checkbox-indikator"></span>
                   <label class="form__label" for="color-4">Черный</label>
                 </div>
                 <div class="form__group">
-                  <input class="form__checkbox visually-hidden" type="checkbox" id="color-5" value="Розовый" name="color">
+                  <input class="form__checkbox visually-hidden" type="checkbox" id="color-5" value="Розовый" name="color" tabindex="0">
                   <span class="checkbox-indikator"></span>
                   <label class="form__label" for="color-5">Розовый</label>
                 </div>
                 <div class="form__group">
-                  <input class="form__checkbox visually-hidden" type="checkbox" id="color-6" value="Оранжевый" name="color">
+                  <input class="form__checkbox visually-hidden" type="checkbox" id="color-6" value="Оранжевый" name="color" tabindex="0">
                   <span class="checkbox-indikator"></span>
                   <label class="form__label" for="color-6">Оранжевый</label>
                 </div>
@@ -136,7 +136,7 @@
           <fieldset class="form__list form__list-telephone">
             <div class="form__list-wrapper">
               <div class="form__legend">Тел</div>
-              <input type="tel" name="Телефон" class="form__input" placeholder="+7 ХХХ ХХ ХХ*" required>
+              <input type="tel" name="Телефон" class="form__input form__input-tel" placeholder="+7 ХХХ ХХ ХХ*" required>
               <svg class="form__img form__img--tell" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="25px" height="24px" viewBox="0 0 24.829 24.333" enable-background="new 0 0 24.829 24.333" xml:space="preserve">
                 <g>
                   <g id="UrwUhy_2_">
@@ -159,7 +159,7 @@
           <fieldset class="form__list form__list-mail">
             <div class="form__list-wrapper">
               <div class="form__legend">e-mail</div>
-              <input type="email" name="e-mail" class="form__input" placeholder="Ваш Email*" required>
+              <input type="email" name="e-mail" class="form__input form__input-email" placeholder="Ваш Email*" required>
               <svg class="form__img form__img--email" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32px" height="32px" viewBox="0 0 32 32" enable-background="new 0 0 32 32" xml:space="preserve">
                 <path id="mail" d="M28,5H4C1.791,5,0,6.792,0,9v13c0,2.209,1.791,4,4,4h24c2.209,0,4-1.791,4-4V9 C32,6.792,30.209,5,28,5z
                 M2,10.25l6.999,5.25L2,20.75V10.25z M30,22c0,1.104-0.898,2-2,2H4c-1.103,0-2-0.896-2-2l7.832-5.875
@@ -219,6 +219,7 @@
           <ul class="social__list">
             <li class="social__item">
               <a href="#" class="social__link social__link--instagram">
+                <span class="visually-hidden">instagram</span>
                 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="22px" height="21px" viewBox="53.115 53.19 21.769 21.334" enable-background="new 53.115 53.19 21.769 21.334" xml:space="preserve">
                   <g id="instagram">
                     <g>
@@ -273,6 +274,7 @@
             </li>
             <li class="social__item">
               <a href="#" class="social__link social__link--facebook">
+                <span class="visually-hidden">facebook</span>
                 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="15px" height="28px" viewBox="56.519 49.996 14.962 27.718" enable-background="new 56.519 49.996 14.962 27.718" xml:space="preserve">
                   <g id="facebook">
                     <g>
@@ -299,6 +301,7 @@
             </li>
             <li class="social__item">
               <a href="#" class="social__link social__link--twitter">
+                <span class="visually-hidden">twitter</span>
                 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="23px" height="20px" viewBox="52.253 53.771 23.494 20.168" enable-background="new 52.253 53.771 23.494 20.168" xml:space="preserve">
                   <g id="twitter">
                     <g>

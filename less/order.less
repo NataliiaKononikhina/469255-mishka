@@ -35,6 +35,8 @@
   color: #000000;
   width: 150px;
   text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 11px;
 }
 
 .order__form-title {
@@ -45,7 +47,10 @@
 .order__form {
   width: 260px;
   margin: 0 auto;
-  margin-top: 31px;
+  margin-top: 22px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .order__radio + .order__option {
@@ -53,7 +58,7 @@
   font-size: 17px;
   line-height: 17px;
   border: 2px solid #ececec;
-  padding: 18px 34px;
+  padding: 16px 33px;
   display: inline-block;
 }
 
@@ -73,6 +78,7 @@
   margin-top: 31px;
   margin-bottom: 46px;
   padding: 14px 0;
+  font-size: 17px;
 }
 
 @media all and (min-width: 768px) {
@@ -90,7 +96,7 @@
   }
 
   .order__radio + .order__option {
-    padding: 18px 49px;
+    padding: 18px 48px;
   }
 
   .order__add {

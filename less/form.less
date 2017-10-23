@@ -97,6 +97,11 @@
   border-color: #62d1ba;
 }
 
+.form__group:focus .radio-indikator,
+.form__group:focus .checkbox-indikator {
+  border-color: #62d1ba;
+}
+
 .form__group:active .radio-indikator,
 .form__group:active .checkbox-indikator {
   border-color: rgba(0, 0, 0, 0.3);
@@ -180,8 +185,8 @@
   }
 }
 
-input[type="tel"],
-input[type="email"] {
+.form__input-tel,
+.form__input-email {
   padding-bottom: 14px;
   margin-bottom: 21px;
 }
@@ -193,13 +198,13 @@ input[type="email"] {
   opacity: 0.2;
 }
 
-input:hover + .form__img,
-input:focus + .form__img {
+.form__input:hover + .form__img,
+.form__input:focus + .form__img {
   opacity: 1;
   fill: #62d1ba;
 }
 
-textarea {
+.form__input-textarea {
   padding: 15px;
   padding-bottom: 20px;
   box-sizing: border-box;
@@ -299,10 +304,6 @@ textarea {
     background-color: transparent;
   }
 
-  .form__label br {
-    display: none;
-  }
-
   .form__color-wrapper,
   .form__telephone-mail-wrapper {
     background-color: #f1f1f1;
@@ -314,8 +315,8 @@ textarea {
     width: 501px;
   }
 
-  input[type="tel"],
-  input[type="email"] {
+  .form__input-tel,
+  .form__input-email {
     margin-top: 13px;
     font-size: 19px;
     padding-left: 17px;

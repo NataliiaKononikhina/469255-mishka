@@ -1,3 +1,18 @@
+.page-main__about-us-wrapper {
+  position: relative;
+
+  &::before {
+    .pseudo;
+    background-image: url("../img/bg-zigzag-line.svg");
+    background-repeat: repeat-x;
+    width: 100%;
+    height: 6px;
+    left: 0;
+    top: -38px;
+    background-size: contain;
+  }
+}
+
 .about-us {
   color: #000000;
   font-weight: bold;
@@ -5,18 +20,6 @@
   margin-bottom: 5px;
   margin-top: 71px;
   width: 260px;
-  position: relative;
-
-  &::before {
-    .pseudo;
-    background-image: url("../img/bg-zigzag-line.svg");
-    background-repeat: repeat-x;
-    width: 320px;
-    height: 25px;
-    left: -30px;
-    top: -45px;
-    background-size: contain;
-  }
 }
 
 .about-us__title {
@@ -88,6 +91,11 @@
 }
 
 @media all and (min-width: 768px) {
+  .page-main__about-us-wrapper::before {
+    height: 15px;
+    top: -45px;
+  }
+
   .about-us {
     width: 668px;
     margin-bottom: 26px;
@@ -143,6 +151,11 @@
 }
 
 @media all and (min-width: 1150px) {
+  .page-main__about-us-wrapper::before {
+    height: 21px;
+    top: -99px;
+  }
+
   .about-us {
     width: 700px;
     padding: 0 175px;

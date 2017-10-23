@@ -120,20 +120,22 @@
 
 @media all and (min-width: 1150px) {
   .page-main__products {
-    margin-bottom: 58px;
+    display: flex;
+    flex-wrap: wrap;
   }
 
   .product {
     display: block;
     width: 315px;
     margin: 0;
+    margin-bottom: 58px;
     height: auto;
   }
 
   .product__about {
     box-sizing: border-box;
     width: 316px;
-    height: 189px;
+    min-height: 189px;
     padding: 0 27px;
     margin-top: 0;
   }
