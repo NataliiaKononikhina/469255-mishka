@@ -40,7 +40,7 @@ function initPopupHandlers() {
   var popup = document.querySelector(".order-wrapper");
   var closePopup = document.querySelector(".js-closeOrderModal");
 
-  if (open) {
+  if (openModals) {
     openModals.forEach(function (modal) {
       modal.addEventListener("click", function (evt) {
         evt.preventDefault();
@@ -49,10 +49,12 @@ function initPopupHandlers() {
     });
   }
 
-  closePopup.addEventListener("click", function (evt) {
-    evt.preventDefault();
-    popup.classList.remove("show-popup");
-  });
+  if (closePopup) {
+    closePopup.addEventListener("click", function (evt) {
+      evt.preventDefault();
+      popup.classList.remove("show-popup");
+    });
+  }
 
   document.querySelector("body").addEventListener("keyup", function (evt) {
     if (popup.classList.contains('show-popup') && evt.keyCode === 27) {
