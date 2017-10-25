@@ -122,10 +122,10 @@
   }
 
   .product {
-    display: block;
+    display: flex;
+    flex-direction: column;
     width: 315px;
-    margin: 0;
-    margin-bottom: 58px;
+    margin: 0 0 58px 0;
     height: auto;
   }
 
@@ -135,14 +135,15 @@
     min-height: 189px;
     padding: 0 27px;
     margin-top: 0;
-  }
+    flex: 1;
 
-  .product__about:hover {
-    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
-  }
+    &:hover {
+      box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+    }
 
-  .product__about:active {
-    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+    &:active {
+      box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+    }
   }
 
   .product__name {
